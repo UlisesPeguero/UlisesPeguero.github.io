@@ -27,7 +27,7 @@ div#container {
     /*width: calc(50% - 10px);*/    
 }
 
-.left-col h2, 
+.left-col h1, 
 a {
     color: var(--colorPurple);
 }
