@@ -1,0 +1,63 @@
+body {
+    background-color: black;    
+    font-family: "Asap", Helvetica;
+    font-size: 14px;    
+    --colorPurple: #A64Ac9;
+}
+
+div#container {
+    background-color: white;
+    color: black;
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 20px;
+    padding: 20px;    
+    /*
+        margin: creates space around the box outside the border
+        padding: creates space aroun the content inside the border
+        content: anything that is contained in the box
+    */
+}
+
+.left-col {
+    float: left;
+    width: 50%;
+    /*  Need a better way to fit the text without reaching the image if text is justify*/
+    /*padding-right: 10px;*/
+    /*width: calc(50% - 10px);*/    
+}
+
+.left-col h2, 
+a {
+    color: var(--colorPurple);
+}
+
+.left-col p {    
+    margin-bottom: 35px;
+}
+
+.left-col a {
+    text-decoration: none;
+    font-weight: bold;
+    border: solid 2px var(--colorPurple);
+    border-radius: 4px;
+    padding: 10px;
+    /*margin-top: 30px;*/
+    /* margin-top doesn't work, I had to add margin bottom on <p>*/
+}
+
+.right-col {
+    float: right; 
+    width: 50%;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* avoid using inline style*/
+.clearFix {
+    clear: both;
+}
+
